@@ -14,7 +14,8 @@ navToggle.addEventListener("click", () => {
 });
 
 nav.addEventListener("click", (event) => {
-  if (event.target.tagName !== "A") return;
+  const link = event.target.closest("a");
+  if (!link || !nav.contains(link)) return;
   nav.classList.remove("is-open");
   header.classList.remove("is-open");
   navToggle.setAttribute("aria-expanded", "false");
