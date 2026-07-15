@@ -110,10 +110,6 @@ body.is-loading {
   will-change: opacity, transform, filter;
 }
 
-.site-loader.is-playing {
-  animation: loader-screen-out 780ms cubic-bezier(0.4, 0, 0.2, 1) 2.15s forwards;
-}
-
 .site-loader.is-playing .loader-stage::before {
   animation: loader-halo 2.2s ease both;
 }
@@ -124,6 +120,10 @@ body.is-loading {
 
 .site-loader.is-playing .loader-wordmark {
   animation: loader-wordmark-modern 2s cubic-bezier(0.22, 1, 0.36, 1) 120ms both;
+}
+
+.site-loader.is-leaving {
+  animation: loader-screen-out 780ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 @keyframes loader-halo {
@@ -2570,9 +2570,8 @@ body.lightbox-open {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .site-loader {
+  .site-loader.is-leaving {
     animation-duration: 250ms;
-    animation-delay: 400ms;
   }
 
   .loader-wordmark {

@@ -14,10 +14,10 @@
 <body>
   <div class="site-loader" aria-hidden="true">
     <div class="loader-stage">
-      <img class="loader-wordmark" src="images/brand/logo-loader-wordmark.png" alt="">
+      <img class="loader-wordmark" src="images/brand/logo-loader-wordmark.png" alt="" decoding="sync" fetchpriority="high">
     </div>
   </div>
-  <script>(function(){var key='bellelauzeIntroSeen';var loader=document.querySelector('.site-loader');if(!loader)return;if(sessionStorage.getItem(key)==='1'){loader.classList.add('is-skipped');return;}document.body.classList.add('is-loading');window.scrollTo(0,0);window.addEventListener('load',function(){requestAnimationFrame(function(){loader.classList.add('is-playing');sessionStorage.setItem(key,'1');loader.addEventListener('animationend',function(event){if(event.animationName==='loader-screen-out'){document.body.classList.remove('is-loading');}},{once:false});});});setTimeout(function(){document.body.classList.remove('is-loading');loader.classList.add('is-skipped');},3400);})();</script>
+  <script>(function(){var key='bellelauzeIntroSeen';var loader=document.querySelector('.site-loader');if(!loader)return;if(sessionStorage.getItem(key)==='1'){loader.classList.add('is-skipped');return;}var started=Date.now();var done=false;var minDuration=1900;var maxDuration=8000;document.body.classList.add('is-loading');loader.classList.add('is-playing');window.scrollTo(0,0);function finish(){if(done)return;done=true;var wait=Math.max(0,minDuration-(Date.now()-started));setTimeout(function(){sessionStorage.setItem(key,'1');document.body.classList.remove('is-loading');loader.classList.add('is-leaving');loader.addEventListener('animationend',function(event){if(event.animationName==='loader-screen-out'){loader.classList.add('is-skipped');}},{once:true});setTimeout(function(){loader.classList.add('is-skipped');},900);},wait);}if(document.readyState==='complete'){finish();}else{window.addEventListener('load',finish,{once:true});}setTimeout(finish,maxDuration);})();</script>
 
   <header class="site-header" data-header>
     <a class="brand" href="#accueil" aria-label="Domaine Bellelauze">
