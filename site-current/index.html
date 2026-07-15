@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Domaine Bellelauze, chambres d'hôtes, gîte et table d'hôtes dans l'Aude, près de Carcassonne et du Pays cathare.">
+  <title>Domaine Bellelauze | Chambres d'hôtes et gîte dans l'Aude</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIINfQ0ppNU5ARu0iuxRShuNCrC79b9nL8xI=" crossorigin="">
+  <link rel="stylesheet" href="modern.css">
+</head>
+<body>
+  <div class="site-loader" aria-hidden="true">
+    <div class="loader-stage">
+      <img class="loader-wordmark" src="images/brand/logo-loader-wordmark.png" alt="">
+    </div>
+  </div>
+  <script>(function(){var key='bellelauzeIntroSeen';var loader=document.querySelector('.site-loader');if(!loader)return;if(sessionStorage.getItem(key)==='1'){loader.classList.add('is-skipped');return;}document.body.classList.add('is-loading');window.scrollTo(0,0);window.addEventListener('load',function(){requestAnimationFrame(function(){loader.classList.add('is-playing');sessionStorage.setItem(key,'1');loader.addEventListener('animationend',function(event){if(event.animationName==='loader-screen-out'){document.body.classList.remove('is-loading');}},{once:false});});});setTimeout(function(){document.body.classList.remove('is-loading');loader.classList.add('is-skipped');},3400);})();</script>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#accueil" aria-label="Domaine Bellelauze">
+      <img class="brand-logo" src="images/brand/logo-header-clean.png" alt="Domaine Bellelauze">
+      <span>
+        <strong>Domaine Bellelauze</strong>
+        <small>Bouriège, Aude</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" data-nav>
+      <a href="gite-aude.html">Le domaine</a>
+      <a href="chambres-hotes-aude.html">Chambres</a>
+      <strong>Gîte</strong>
+      <a href="#table">Table</a>
+      <a href="#explorer">Explorer</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="photos.html">Photos</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-phone" href="tel:0468314103">0468314103</a>
+      <a class="nav-book" href="https://domaine-bellelauze.amenitiz.io/" target="_blank" rel="noreferrer">Réserver</a>
+    </nav>
+  </header>
+
+  <main id="accueil">
+    <section class="hero">
+      <picture>
+        <source srcset="images/domaine-bellelauze.jpg" media="(min-width: 900px)">
+        <img src="images/accueil.jpg" alt="Le Domaine Bellelauze au coeur de la campagne audoise">
+      </picture>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Chambres d'hôtes, gîte et table d'hôtes près de Carcassonne</p>
+        <h1>Une maison de campagne pour ralentir au cœur du Pays cathare.</h1>
+        <p class="hero-text">À Bouriège, le Domaine Bellelauze accueille couples, familles et voyageurs curieux dans une grande bâtisse en pierre, avec 11 chambres rénovées, un gîte, deux piscines et une cuisine conviviale.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://domaine-bellelauze.amenitiz.io/" target="_blank" rel="noreferrer">Voir les disponibilités</a>
+          <a class="button secondary" href="#sejours">Découvrir les séjours</a>
+          <a class="button secondary" href="tel:0468314103">Appeler</a>
+        </div>
+      </div>
+      <div class="hero-panel" aria-label="Points forts">
+        <div>
+          <strong>11</strong>
+          <span>chambres avec salle d'eau privée</span>
+        </div>
+        <div>
+          <strong>2</strong>
+          <span>piscines pour petits et grands</span>
+        </div>
+        <div>
+          <strong>11300</strong>
+          <span>Bouriège, entre Limoux et Carcassonne</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section-pad" id="domaine">
+      <div class="intro-copy reveal">
+        <p class="section-kicker">Le domaine</p>
+        <h2>La simplicité d'une maison familiale, le confort d'une adresse soignée.</h2>
+      </div>
+      <div class="intro-text reveal">
+        <p>Ingeborg, Bruno et leur famille vous accueillent dans une ancienne demeure de pierre, ouverte sur les collines de l'Aude. Ici, on vient pour dormir au calme, se baigner, partager un repas, partir visiter les châteaux cathares, puis revenir boire un verre sous les arbres.</p>
+      </div>
+    </section>
+
+    <section class="visual-story">
+      <figure class="story-large story-carousel reveal" data-story-carousel>
+        <img class="is-active" src="images/accueil/vue-sur-bellelauze.jpg" alt="Vue sur le Domaine Bellelauze">
+        <img src="images/domaine/domaine-bellelauze-bouriege-1.jpg" alt="Facade en pierre du Domaine Bellelauze">
+        <img src="images/domaine/domaine-bellelauze-bouriege-3.jpg" alt="Jardin du Domaine Bellelauze">
+        <figcaption>Un domaine ouvert sur les paysages de l'Aude.</figcaption>
+      </figure>
+      <div class="story-stack">
+        <figure class="story-carousel reveal" data-story-carousel>
+          <img class="is-active" src="images/hamac.jpg" alt="Hamac au calme dans le jardin">
+          <img src="images/route-paradis.jpg" alt="Chemin ombrage au Domaine Bellelauze">
+          <img src="images/domaine/domaine-bellelauze-bouriege-2.jpg" alt="Espace exterieur du domaine">
+          <figcaption>Temps lent, siestes et fin d'apres-midi dehors.</figcaption>
+        </figure>
+        <figure class="story-carousel reveal" data-story-carousel>
+          <img class="is-active" src="images/piscine-.jpg" alt="Piscine du Domaine Bellelauze">
+          <img src="images/accueil/chambres-hotes-aude.jpg" alt="Chambre d'hotes au Domaine Bellelauze">
+          <img src="images/gite/gite-carcassonne-aude.jpg" alt="Gite du Domaine Bellelauze">
+          <figcaption>Deux piscines pour profiter des beaux jours.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-pad offers" id="sejours">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Sejourner</p>
+        <h2>Choisissez votre rythme.</h2>
+        <p>Une nuit sur la route des vacances, quelques jours pour visiter la région, ou une semaine en famille dans le gîte.</p>
+      </div>
+      <div class="offer-grid">
+        <a class="offer-card reveal" href="chambres-hotes-aude.html">
+          <img src="images/chambres/chambres-hotes-carcassonne-1.jpg" alt="Chambre d'hotes au Domaine Bellelauze">
+          <div>
+          <span>Chambres d'hôtes</span>
+          <h3>11 chambres rénovées</h3>
+          <p>Des chambres confortables avec salle de bain et toilettes privées, pensées pour les couples, familles et voyageurs de passage.</p>
+            <strong>Voir les chambres</strong>
+          </div>
+        </a>
+        <a class="offer-card reveal" href="gite-pays-cathare.html">
+          <img src="images/gite/gite-limoux-aude.jpg" alt="Gite du Domaine Bellelauze">
+          <div>
+          <span>Gîte</span>
+            <h3>Une maison pour se retrouver</h3>
+          <p>Un séjour plus autonome, idéal pour les vacances en famille ou entre amis, avec le domaine comme grand terrain de respiration.</p>
+          <strong>Découvrir le gîte</strong>
+          </div>
+        </a>
+        <a class="offer-card reveal" href="gite-aude.html">
+          <img src="images/accueil/chambres-hotes-aude.jpg" alt="Facade et jardin du Domaine Bellelauze">
+          <div>
+            <span>Domaine</span>
+            <h3>Repos, jardin et piscines</h3>
+          <p>Un point de chute calme avec espaces extérieurs, grande piscine, petite piscine, bar et coins tranquilles pour déconnecter.</p>
+            <strong>Explorer le domaine</strong>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="experience" id="table">
+      <div class="experience-image reveal">
+        <img src="images/accueil/Ingeborg-et-Bruno.jpg" alt="La famille du Domaine Bellelauze">
+      </div>
+      <div class="experience-copy reveal">
+        <p class="section-kicker">Table d'hotes</p>
+        <h2>Des repas simples, généreux, ancrés dans le terroir.</h2>
+        <p>La cuisine du domaine met en avant les produits locaux, le potager et l'élevage d'agneaux de la maison. Le soir, l'ambiance est conviviale : on dîne, on échange, puis on prolonge parfois la soirée au bar.</p>
+        <ul class="check-list">
+          <li>Table d'hôtes sur réservation</li>
+          <li>Produits du terroir et cuisine familiale</li>
+          <li>Ambiance chaleureuse apres les excursions</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-pad explorer" id="explorer">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Autour de Bellelauze</p>
+        <h2>Carcassonne, Limoux et les châteaux cathares à portée d'escapade.</h2>
+      </div>
+      <div class="explorer-layout">
+        <div class="real-map-card reveal">
+          <div class="map-filters" aria-label="Filtrer les lieux touristiques">
+            <button class="is-active" type="button" data-map-filter="all">Tout</button>
+            <button type="button" data-map-filter="city">Villes</button>
+            <button type="button" data-map-filter="castle">Châteaux</button>
+            <button type="button" data-map-filter="nature">Nature</button>
+            <button type="button" data-map-filter="heritage">Patrimoine</button>
+            <button type="button" data-map-filter="wine">Terroir</button>
+          </div>
+          <div class="tourism-map" id="tourism-map" aria-label="Carte des lieux touristiques autour du Domaine Bellelauze"></div>
+          <div class="map-place-panel" data-map-place-panel>
+            <strong>Domaine Bellelauze</strong>
+            <span>Point de départ à Bouriège pour rayonner vers Carcassonne, Limoux et le Pays cathare.</span>
+          </div>
+          <div class="map-results" data-tourism-list aria-label="Lieux touristiques"></div>
+        </div>
+        <div class="sketch-map reveal" aria-label="Carte illustrée des environs du Domaine Bellelauze">
+          <svg viewBox="0 0 900 640" role="img" aria-labelledby="map-title map-desc">
+            <title id="map-title">Carte touristique autour du Domaine Bellelauze</title>
+            <desc id="map-desc">Carte dessinée au crayon avec le Domaine Bellelauze, Carcassonne, Limoux, Rennes-le-Château, les châteaux cathares, les vignes, le soleil et les collines de l'Aude.</desc>
+            <defs>
+              <filter id="pencil-noise">
+                <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.8" />
+              </filter>
+              <pattern id="paper-grain" width="80" height="80" patternUnits="userSpaceOnUse">
+                <path d="M4 16 C24 8 42 19 68 10 M10 38 C32 28 50 43 76 32 M2 63 C26 53 48 70 74 58" />
+              </pattern>
+            </defs>
+
+            <rect class="map-paper" width="900" height="640" rx="10" />
+            <rect class="map-grain" width="900" height="640" />
+
+            <g class="map-sun">
+              <circle cx="760" cy="92" r="42" />
+              <path d="M760 20 L760 0 M760 184 L760 164 M688 92 L668 92 M852 92 L832 92 M710 42 L694 26 M826 158 L810 142 M810 42 L826 26 M694 158 L710 142" />
+            </g>
+            <g class="map-hills">
+              <path d="M36 382 C126 300 184 328 264 256 C354 176 444 270 514 226 C606 168 670 228 744 188 C806 154 848 176 878 152" />
+              <path d="M26 466 C130 386 210 430 302 350 C390 272 454 350 548 288 C650 220 706 296 876 238" />
+              <path d="M38 554 C146 492 226 518 332 440 C448 354 540 452 654 364 C738 300 814 336 882 290" />
+            </g>
+            <g class="map-roads">
+              <path d="M450 326 C392 288 326 284 266 248 C218 220 178 186 126 164" />
+              <path d="M450 326 C510 286 564 246 626 200 C676 164 716 134 760 104" />
+              <path d="M450 326 C498 370 546 420 608 464 C662 504 728 532 804 552" />
+              <path d="M450 326 C386 386 330 428 272 478 C216 526 158 556 96 574" />
+              <path d="M450 326 C430 384 420 438 410 506 C404 548 402 586 396 618" />
+            </g>
+            <g class="map-vines">
+              <path d="M116 426 C162 398 204 398 246 424 M110 462 C158 438 204 440 252 468 M104 500 C154 478 200 480 258 510" />
+              <path d="M644 332 C688 302 732 306 778 334 M636 368 C690 340 734 346 786 374 M628 406 C686 382 738 386 796 416" />
+              <circle cx="164" cy="430" r="7" />
+              <circle cx="184" cy="438" r="6" />
+              <circle cx="176" cy="452" r="7" />
+              <circle cx="716" cy="352" r="7" />
+              <circle cx="736" cy="360" r="6" />
+              <circle cx="728" cy="374" r="7" />
+            </g>
+            <g class="map-castle-emblem" aria-hidden="true">
+              <path d="M80 86 L80 42 L108 42 L108 64 L132 64 L132 42 L160 42 L160 86 Z" />
+              <path d="M70 86 L170 86 L158 132 L82 132 Z" />
+              <path d="M108 132 L108 104 C108 92 122 92 122 104 L122 132" />
+              <path d="M62 140 C88 128 146 128 176 140" />
+            </g>
+            <g class="map-watermark">
+              <text x="560" y="500">Aude</text>
+              <text x="594" y="540">Pays cathare</text>
+            </g>
+            <g class="map-points">
+              <g class="map-pin is-active" data-map-point="bellelauze" role="button" tabindex="0" aria-label="Domaine Bellelauze">
+                <g transform="translate(450 326)">
+                  <circle r="24" />
+                  <path d="M-12 12 L-12 -8 L0 -18 L12 -8 L12 12 Z M-3 12 L-3 0 L5 0 L5 12" />
+                </g>
+              </g>
+              <g class="map-pin" data-map-point="carcassonne" role="button" tabindex="0" aria-label="Carcassonne">
+                <g transform="translate(804 552)">
+                  <circle r="20" />
+                  <path d="M-12 8 L-12 -12 L-4 -12 L-4 -4 L4 -4 L4 -12 L12 -12 L12 8 Z" />
+                </g>
+              </g>
+              <g class="map-pin" data-map-point="limoux" role="button" tabindex="0" aria-label="Limoux">
+                <g transform="translate(396 568)">
+                  <circle r="20" />
+                  <path d="M-10 4 C-2 -10 8 -10 12 0 C2 0 0 8 -10 4 Z M-8 10 C2 4 8 8 12 14" />
+                </g>
+              </g>
+              <g class="map-pin" data-map-point="rennes" role="button" tabindex="0" aria-label="Rennes-le-Château">
+                <g transform="translate(126 164)">
+                  <circle r="20" />
+                  <path d="M-10 8 L-10 -10 L-2 -10 L-2 -2 L6 -2 L6 -10 L12 -10 L12 8 Z" />
+                </g>
+              </g>
+              <g class="map-pin" data-map-point="chateaux" role="button" tabindex="0" aria-label="Châteaux cathares">
+                <g transform="translate(760 104)">
+                  <circle r="20" />
+                  <path d="M-12 10 L-8 -12 L0 -4 L8 -12 L12 10 Z" />
+                </g>
+              </g>
+              <g class="map-pin" data-map-point="vignes" role="button" tabindex="0" aria-label="Vignes de l'Aude">
+                <g transform="translate(246 424)">
+                  <circle r="20" />
+                  <path d="M-10 -2 C-4 -12 8 -10 12 0 C2 0 -2 8 -10 -2 Z M-8 8 C0 2 8 6 12 14" />
+                </g>
+              </g>
+            </g>
+            <g class="map-labels">
+              <text x="484" y="316">Bellelauze</text>
+              <text x="650" y="548">Carcassonne</text>
+              <text x="414" y="590">Limoux</text>
+              <text x="144" y="150">Rennes-le-Château</text>
+              <text x="624" y="92">Châteaux cathares</text>
+              <text x="150" y="408">Vignes</text>
+            </g>
+          </svg>
+          <div class="map-caption" data-map-caption>
+            <strong>Domaine Bellelauze</strong>
+            <span>Votre point de départ au calme, entre Limoux, Carcassonne et les paysages cathares.</span>
+          </div>
+        </div>
+        <div class="place-list">
+          <article class="place reveal is-active" data-map-card="bellelauze">
+            <span>•</span>
+            <div>
+              <h3>Domaine Bellelauze</h3>
+              <p>Un point d'ancrage paisible à Bouriège, idéal pour alterner repos, table d'hôtes et excursions.</p>
+            </div>
+          </article>
+          <article class="place reveal" data-map-card="carcassonne">
+            <span>01</span>
+            <div>
+              <h3>Carcassonne</h3>
+              <p>Une cité médiévale incontournable pour une journée entre remparts, ruelles et panoramas.</p>
+            </div>
+          </article>
+          <article class="place reveal" data-map-card="chateaux">
+            <span>02</span>
+            <div>
+              <h3>Pays cathare</h3>
+              <p>Châteaux, abbayes, villages et routes de crêtes composent un terrain de jeu idéal.</p>
+            </div>
+          </article>
+          <article class="place reveal" data-map-card="limoux">
+            <span>03</span>
+            <div>
+              <h3>Limoux & l'Aude</h3>
+              <p>Marchés, vignobles, rivières et petites routes pour alterner visites et moments calmes.</p>
+            </div>
+          </article>
+          <article class="place reveal" data-map-card="rennes">
+            <span>04</span>
+            <div>
+              <h3>Rennes-le-Château</h3>
+              <p>Une halte mystérieuse et perchée, parfaite pour compléter une journée de visite dans la Haute Vallée.</p>
+            </div>
+          </article>
+          <article class="place reveal" data-map-card="vignes">
+            <span>05</span>
+            <div>
+              <h3>Vignes & terroir</h3>
+              <p>Autour de Limoux, les paysages de vigne, les marchés et les produits locaux racontent l'Aude autrement.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-band">
+      <div class="booking-content reveal">
+        <p class="section-kicker">Réservation</p>
+        <h2>Envie de poser vos valises a Bellelauze ?</h2>
+        <p>Consultez les disponibilités en direct ou contactez le domaine pour préparer un séjour sur mesure.</p>
+      </div>
+      <div class="booking-actions reveal">
+        <a class="button primary dark" href="https://domaine-bellelauze.amenitiz.io/" target="_blank" rel="noreferrer">Réserver en ligne</a>
+        <a class="button secondary dark" href="mailto:info@bellelauze.com">Écrire au domaine</a>
+        <a class="button secondary dark" href="tel:0468314103">Appeler</a>
+        </div>
+    </section>
+  </main>
+
+  <section class="contact-cta" id="contact">
+    <div class="contact-cta-copy reveal">
+      <p class="section-kicker">Contact direct</p>
+      <h2>Besoin d'une r&eacute;ponse rapide ?</h2>
+      <p>Appelez le domaine pour une disponibilit&eacute;, un conseil sur les chambres ou une demande particuli&egrave;re. Vous pouvez aussi laisser un message avec vos dates.</p>
+      <a class="contact-phone" href="tel:0468314103"><span>Appeler Bellelauze</span><strong>0468314103</strong></a>
+      <div class="contact-actions">
+        <a class="button primary dark" href="https://domaine-bellelauze.amenitiz.io/" target="_blank" rel="noreferrer">R&eacute;server en ligne</a>
+        <a class="button secondary dark" href="tel:0468314103">Appeler maintenant</a>
+      </div>
+    </div>
+    <form class="contact-form reveal" data-contact-form action="mailto:info@bellelauze.com" method="post" enctype="text/plain">
+      <div class="form-heading">
+        <p class="section-kicker">Formulaire</p>
+        <h2>Pr&eacute;parer votre s&eacute;jour</h2>
+      </div>
+      <div class="form-grid">
+        <label>Nom<input name="Nom" type="text" autocomplete="name" required></label>
+        <label>Email<input name="Email" type="email" autocomplete="email" required></label>
+        <label>T&eacute;l&eacute;phone<input name="Telephone" type="tel" autocomplete="tel"></label>
+        <label>Dates souhait&eacute;es<input name="Dates" type="text" placeholder="Ex. 12 au 15 ao&ucirc;t"></label>
+      </div>
+      <label>Message<textarea name="Message" rows="5" placeholder="Nombre de personnes, formule souhait&eacute;e, question..." required></textarea></label>
+      <button class="button primary dark" type="submit">Envoyer la demande</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div>
+      <a class="brand footer-brand" href="index.html">
+        <img class="footer-logo" src="images/brand/logo.png" alt="Domaine Bellelauze">
+        <span><strong>Domaine Bellelauze</strong><small>Chambres d'h&ocirc;tes & g&icirc;te</small></span>
+      </a>
+      <p>Domaine Bellelauze, 11300 Bouri&egrave;ge<br>Entre Limoux, Carcassonne et le Pays cathare.</p>
+    </div>
+    <div class="footer-links">
+      <a href="tel:0468314103">0468314103</a>
+      <a href="mailto:info@bellelauze.com">info@bellelauze.com</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="photos.html">Photos</a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="modern.js"></script>
+</body>
+</html>
