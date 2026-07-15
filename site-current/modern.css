@@ -2743,6 +2743,10 @@ body.lightbox-open {
     min-height: 760px;
   }
 
+  .hero > picture img {
+    object-position: 62% center;
+  }
+
   .hero-content {
     width: min(100% - 36px, 720px);
     padding-right: 0;
@@ -2792,6 +2796,30 @@ body.lightbox-open {
   .detail-intro,
   .split-detail {
     grid-template-columns: 1fr;
+  }
+
+  .real-map-card {
+    position: relative;
+    top: auto;
+  }
+
+  .tourism-map {
+    height: 420px;
+    min-height: 420px;
+  }
+
+  .map-results {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .place-list {
+    gap: 10px;
+    margin-top: 14px;
+  }
+
+  .place {
+    padding: 20px;
   }
 
   .season-grid,
@@ -2845,6 +2873,63 @@ body.lightbox-open {
 }
 
 @media (max-width: 620px) {
+  .hero > picture img {
+    object-position: 68% center;
+  }
+
+  .explorer-layout {
+    gap: 18px;
+  }
+
+  .real-map-card,
+  .sketch-map {
+    position: static;
+    top: auto;
+  }
+
+  .tourism-map {
+    height: 340px;
+    min-height: 340px;
+  }
+
+  .map-filters {
+    gap: 7px;
+    padding: 14px;
+  }
+
+  .map-filters button {
+    min-height: 34px;
+    padding: 0 11px;
+    font-size: 12px;
+  }
+
+  .map-place-panel {
+    padding: 16px;
+  }
+
+  .map-results {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .map-result {
+    padding: 13px 14px;
+  }
+
+  .place-list {
+    gap: 10px;
+  }
+
+  .place {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 12px;
+    padding: 18px;
+  }
+
+  .place span {
+    font-size: 30px;
+  }
+
   .gallery-hero {
     padding-top: 102px;
   }
