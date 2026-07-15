@@ -2809,13 +2809,18 @@ body.lightbox-open {
   }
 
   .map-results {
-    max-height: none;
-    overflow: visible;
+    max-height: 320px;
+    overflow: auto;
   }
 
   .place-list {
     gap: 10px;
     margin-top: 14px;
+  }
+
+  .sketch-map,
+  .place-list {
+    display: none;
   }
 
   .place {
@@ -2908,8 +2913,8 @@ body.lightbox-open {
   }
 
   .map-results {
-    max-height: none;
-    overflow: visible;
+    max-height: 300px;
+    overflow: auto;
   }
 
   .map-result {
