@@ -2740,24 +2740,47 @@ body.lightbox-open {
   }
 
   .hero {
-    min-height: 860px;
+    min-height: 760px;
   }
 
   .hero-content {
     width: min(100% - 36px, 720px);
     padding-right: 0;
-    padding-bottom: 260px;
+    padding-bottom: 210px;
   }
 
   .hero-panel {
     left: 18px;
     right: 18px;
     grid-template-columns: 1fr;
+    bottom: 22px;
+  }
+
+  .hero-panel div {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding: 10px 14px;
   }
 
   .hero-panel div + div {
     border-top: 1px solid rgba(255, 253, 248, 0.22);
     border-left: 0;
+  }
+
+  .hero-panel strong {
+    flex: 0 0 58px;
+    font-size: clamp(24px, 8vw, 34px);
+  }
+
+  .hero-panel span {
+    min-width: 0;
+    margin-top: 0;
+    overflow: hidden;
+    font-size: clamp(10px, 2.7vw, 12px);
+    line-height: 1.15;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .intro,
@@ -2958,7 +2981,7 @@ body.lightbox-open {
   }
 
   .hero {
-    min-height: 820px;
+    min-height: 740px;
   }
 
   .hero-content {
